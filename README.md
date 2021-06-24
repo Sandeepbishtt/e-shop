@@ -1,70 +1,44 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Logo](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAABU1BMVEX///8XM0H///3+/v8YMkH///z//v38///K0NMWMj66wsfLVAAYMkMAIjUUM0ELJjUAJDR+iI4OLj3/+/cAKjbQWQDchlkAGi/UZBz24NPNXQhZZ3FDU1vU2tgAITAAJTbyz7hpdHvl5+YAGyz66dvUayr99u334crZ3uHOUwAACyLvzrzObjIAFSjYYRsAFyfbj2PqwKdNXWUdL0P98+wAJjyYoaf88+QyRlDpu58AEikAAB0AABd2gILdnX7p18bZronUkGvjrpDko33Ne0rbkVrflWnQdkHfgUL1yrXst5nkoHfMai/689bOdjjz17mtuLlDX2XPbSHbgk2NmJ07T1XPZhZVYWfu0smmr7rBZR/QYCJgaGnsvKTilWLgdzYAAAkrRlbs2NXUoozKjW3RlX/KmnzmoZDZuJbLlWvovLHft4LRc0rts6HTk2LdxLHUr5IR4e2cAAATiklEQVR4nO1b6X8aR5ruq7poaK5uWhKN3NwNCISEggQo0WFkWyPLazEWxlI0zkzsOLPxbhL//5/2fasahLAOe5CdTX712Ii+u+qp965CkgQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAT+olD/6Ab8OaATVddVSlRVEHYXFKLgl050IV13QimEAlTpH92W//8If7uG2P5uhwrZugvhqGbImmYmkioVZN2BcFQ2NEHWp+GvQZY+AdgSQhUJvymBf/f6mimylD8vWQoHxD+qTiSbUFXRKSEUyLtPTJFF7vXBXxUBWUShVC/t7sGX3a609itUudfX/DXI0nWF0UJ839+tred6B+tl1609VO63T38WskBuuErpOkGAWaIKaBlV4SMRW/dLZ7le/8lC42KpOXJqNaex3q/QsRriTbD9+YKmstQmeMwn2ixd0e940aQ3k5d8dsNuAUgOdhYyDlA0imDNUYjfqdRRkB41lkZuBOA0m83nj/u5dAcslzo28GD6sXv/KVlB1z4m69pOokUIzqrX80DGV0xe8tkNu629OBbwNX4o8UulSu/gyaPDxsiJRGo1t1luHK4f9OqVvzn9DrAI7OiEZXFTDdHVT428p5oPr/+ILEm5pX/M18D3ZKSkq6yql3ROH7+B2M8EG1uew/qdUuXo6fH6wnNUtVrEcd1nhwvHT39wDv/LZnbEfx5pgX0nqKPq2MCrBYQ6bvknvpbdVJiKqGYlS73+qagGeJZO3X8DDSreyR5jq5/TtpuACkjafumk199fPyy7NdQ1d6m51Pit32vtlXybEKnnNCBOhA2ps+QcBXINoZauEr0w2MlEt7e3NzP5rQJIHLlLGUGO1OpWPmOurK6sxDOZ5KB6KVmyFpOzQJZEwzt/X1tdiWZ2QhDbXTH4oGWFQTKzsbIKWM4kw4WpC6hUSA4ZkgPUlWoyY367vd3NDKsqmVe0FN0/XmiUm+DdakBS+W+Pj/u9eq7s9HyCkg72S1eALFuhaDZL7lI9GEg4oErVpOl5KUuWZSOV8Kx8Fdt7B13qYMNLZLN4k6bFs15xQ70ky5SRLCm87KXipmEYVnTxVfWqUNBQMuF5cQtv16w4vD9ZnTodWotGF6NRbyWjSg/yXjRrGLGYlYgmdqrzChcw8BhI+ufp+vHB6CLXadswqsR+XuvBEAJUXbelllNuoxwpStq9qKNtgi6DCNEtLRozDDnG+m2acsI4B+d5W5NUqZDxsqZpfvMNfuCvvDlNliZr2aS05cVjMdPUZKBLSxmhaT0r7FgenNI0RpaGfzxreJlMhBLQIviXykthI6GZ2DATP143NCdbQFa/dlrp+ISkX0ROJIKyROzTSB86zawZlWjLedHGXUVKO+U0SCOC6HSnaMkGdMpk7QbaNMsbUuXmFoGlK3RTMVMzELIMdxra5qtpsgwga8sz8Sz2EIXN6hZ0dcx16KUHMgXDAy8FxGJwRSxWfFUAUedkRTWkWU7sDBImAimNxeDRFrA+F6ARuUijrULIUGpEchIqv07t9cgBD9zxGnrklkuUCUzOaZTAZunoPmneg74Y0LRUcXU1ituwFx3cFkIQmomCMIDWGpuL26urRQ/JolfIMrugOPAkDTvICCkOg9sVKWRkkYmYZjIuUWzYZvZlQeKGKxSPaey2H2ULFdkwYyj5MCrfWMuFuWQLbGBl5KZVsNXt00hP5QGW/SRyTMZk6QFZeKbnHHbQyRDwSEkPB96IWWv5wWCQjFsoL7JlVG9+my6F17Aj0ENveQvu2kp2vdWNGbLgIZtePJ6IGhZeDIYrPs5Dq4ZlMqpjlpcCgJ2ModJpWiLD235JFjwpXoxuRuFCtiubBrBuz0EWBlUNp4XGyV6I7PMmEekg8oNN9TFZdXeUpphISwfOqY1kwYlwXDOQLOtHLtzVrsVEy0teDsSVUUHQZJb1X7bO0bng6wpbO/aELAPEzoxZ8a0CpYUt4xvUNXhJMcyCAEnKZJkhM43U8nkBtKG61bU0k6n06rk0Q5Yc3RhghB1+lWIEQ1tvG8lPgErshdoBmnL7Se2Y2QYwR/3Iqa0y+QE7Q8/cFxWFZYjH7imTMIWorxIxkHAZDQEEAzCsVRjAGAxnqsAjQAyIghxcoRDBsjh/gwuL1WUBLMXpiXGIzcgCdkxmW3QUwxQTw5gRHfIwKbwoM6NvJvIFljgA1xtZZr0MSy6woHFCVsxLUnw2tG4nYbBjhnc+J1nkwFmwKaH6QW2BRUmUSq8jz30YExY6SLTijCpg9uHkE2edRSuKEvLQQMtafAtZAVp0momDFsnmWhhjMHiugndwZSYYacBV6rLFuqZZYSZZbGyClgRkGWbqHBwudFKX4Iky0rOZx8sIzSdkzvUyL9Mjy1XNQqdomIuDq2SlMuq4iFRYTnGyEvn55o50peU09kqAXfewFOCp+zxdmiB3sZTjW6e1Y8JvSuKomzJ4qklvt4pMtBI7EkaV7b30NCo+kiXlmbBAfGQlQzPzEmOy4JEqkzddOo/ixYa8mWHhc8GK8f1iWBpnj2A7UyyOMBM40XFJluaFxlGMLm2lxiwX5iJL1StN90W5XH5Rbl6UcQNw0XTLU2guPXvRwI0l94D7HNAnE22WlakWxgCyNDDQqVeQi6g0507Dcc+wu9J5kXl8aHY2nkmGCh+RpRnZPNYYAZSEiowcA8jCiCa0ilGKaVovC2TSevQZGloyEDekf0wW7F6WckMJ5hHBaEy/8fOBMYM7WhrVRqNms3kxGmHXvm+6I2fSUdjjx0cX7gG/qwCGVePvvwTnwdoABVOluttcmgKQheMO92HsxKUrkegmq5PsG2d3NNnUWD0LYxMiPVhkhho0CqMOaRDlb+BaGTQfPCREEPhID6SGAllM0GR0NJNabtVgZJlycT4Lr9D2QuTY77TbR0svKvDV6bT93OgCNxG+364sjVp+x293So1ai49pdUIWBIgai/uCXRxSTtY0V0ujM+wZONEVSzaDSzXTynr5cRbCyeLFP3VMVmxMFmYMW4mArJ1pspD/j8kyvOGk+ANj+yNzLKa8Ml9cCoFv3znFmnoFIgRm0qmaHjng/8CZofRTSJ9z8KXS9Pe1Mx7NPJAnZM3CeolrFmbJQsnCDEoKdb1ULNBF9PnZsYe6iywqDcdkJe8mS/aGU4WGgszJMharc9ks4KPljjoq0UtLI+AEHDwhpbKbg3FRFOb/OxfOEZ4gacdN87uqsiV/pIYc2ZesObmIMw23jgexrKgOu16CtZ2lO7K1Ovgksu6UrMTNZFXj7EZTs+Yji6gkfeFWCCXtstNiDp7Apvs6eBXkNj6cgIgIZK/mprk3hBYGgrQ8i5f/0FEO2nVELpfDD8DnT0PhKoR3uqko9hBzEZb7URWiKowt5atkTdksRTr3uLGLZ+ik3EL0UBQsOpBqdemMzbqsIcI1BjcR83lDSHQ6DacHvqfdiPSw9A5k2Q336RRZzyItCSPUeq1c0jlZyxaPxDNYXp6Ab2KQSjAsn2SJhNKpmhScL4SHy1kLE0AwJPEB2v5wgmfPN5EFPKzxUoP1kmKExitF0vkiN4CJPJsxCEG0x7xhhpJJAWQY52oASdF86yiobq87xxKvNWDlUYeOHToH494pqt+IvAbtpNJRrdFhJV1FzaQC215FGi+BwbuCHp2XtVQOSiZTQRjbs17Q8EvLNLGEBUIA+1yybiGLMHFGZ4JxljoehkyWtSPmbUFLLiVL9qqTahEMLQYdYPWT0lxAK3IQOYWBg/T5gJW24fPIPb4sEfmHkR5KOAT2pz7nF+wHhDYaluoknLsYI/BAKiSWqNGsmMO+2VQQzssoRFdxhgZG5IFmsrUgUU5WwvjYZl2ShWlA3tNYzQIcro4eF68Jx3mJyDTQrU6RlYCnUpXVloeJGDOPsUR4PrIQrUjjpFI5+aH2Q4XhpHLqLlQCpNMn/3QO2OZx5DE3PbpS1WRmVTVvIAXzZ2hH6CDEpxKuFXZdHwZxDvAKtgvcE0t4k6iw0/OG15CFihcu8ioWHBgHl2EMZGHcWJQvSVdyw6AkSLfiQWZtLc8/Jamna0s40QWRKavBg+9qvmg6EQhDI/Cn5sIJx424zpL7mx2QJQ2LZow5mLWdKtcJolbPu9+Fb6ln6bS7tjGoBhpayMexIiMbKTbeVyYsriELr8l73D7JWS0Zqlar4fyiGZiocUFhQhZI7MsBXDPYiHKKDdm7B8GSSo+elRvPGs+eNcqNBv6BrynAcfw8O2xGjvk8EBhxtAMxVppKrS3nk4DM8rdFKxqWbh48HRLplPfd8j/Y5VYU+6lh9oJVzrskCx9Q/ZHFaKYRsxJrKysraxYvi8pWdBAI84QsUHGruLqyUuS5OwxLIk/vYT4MJ+anYc/sQ/jO/pzWeLbDJpZCXcxODaxyW9ksTkFYoJiLt0sWOlHN2tyMJlJxbnNl0wqzdTnhKO9iIsmnwwEPirwQBWSxAoXCXooVdoPVs4NiKmZOQ5XMVEo1rAvG+A7zHFhNnR9gbSkrxqg8DFCnowEOOEVt+9DZH9+jIltRaIthTEJ5rPfyOt0NUJRlS+MwefUBUvH4OIJPjMlSON+qXi1y9QGylGAGsbrhaSa7FeUQWQPOs9o5mPKrlVIrA1fKctA4LRZLLM+XF47JgjCIrcKS+JSOwv0YO6VLgUNTJGqXIR4byw0MdSEPobgxyXPAl1mJf91mFhTa3TRZuG1+w6N3a3V5fEM4y8gC/6oHZCnVoEYRH5MFAUghGffMYC6DVQKtTS9THU9XXJKV3Sm8WsRRQaogdF/LV3V9fiWUqJ87ygU4AgSbQQR+ud0qu63JrCDSS0P57moxyiamrER0O9HNhy+XQHwMnSa7qdVo1ITA3bCi0W35ZVidrHX4DmdNt1e/y0/ICv0Lj2xvf7vByQJTBhJdTf5YXPNSKJ2WV1yV81gZg0RWv0IWGCg6NNY8IyZb2WJiOUzBA90DWWQ/EkE3eCtwOr/m1KUZKiAUH+LwWt1kchC6uzHqg8Ew2TUsSHKGw0GBBeJ8grswGIQR46eAKSjwI3CIFwr1IBaloa3hRsqwDHhGuHBV7afIgrzxPCnHDSO5Fbq3tWRq+rfThTuxvr7++Lg9xdV1zKg3RFg33QLafVMCMi2hFBc/XT7hKj1Xl3xMkzXF0L0tU4Qk2fZtDuYML4F7YLNsu5RrteodyIn4SoxJDxXMANhCHLTIty6d4neiCeSUYk2DXGq1xNdhXl3YwN+kqle7SnE6hE+Mf/TGS7JUnCZmi6EmOnoPgGHD5I2leGwt0TTwKPX7ZSdSWzo8ISwhxgVKOrp3HZe9SayPCmoKaxNrF6vusDka9LaEaRAmKFKQBRG+4mxiAlmipOuzwofORf/IMLMZcYJUK9LsHVOSxR/IZpfuYxHN1PupSvx0ug2J3uzQUoUcsBpx0ynzOWtgl+iUrWfD/ziVo0LOh1vALa7T0kGJ4AKsQ6BZJfAMotoYE+Jtus3O3e+a1ACcLA3Jun3ZxRyAMKp32Gw+79mz2q3aSs5ZuuD1zsM2Xxxl+wQXeRMmICqt1/fOIKonKpNFpkyE2kgck0wms/TNGVKJR7H8Gij0veNrkKUo+zVcBOn07ekBRxXAmcUlNvvQXHLOGFkk97ZD2iVct2zb0PVWD4ye3+moEhwA4SF+ydeJXeqAFLXbVGn7VFePWh0faO7Yqt32CRyebyr9BnwNsqTSi+YFsNEcVaaDA7Ye0n4Mp1C2miO3x6yE33/0+5vdtz3/3e7xTzYBsnLvO4f99b322/5PHUJLD/sPf23/8vO7uv3h4N2b1s/7IJH19bcP229+6r/tPNytvO3/vPdFFiV/FbJyuN4P5MfJzZ7RybEDRDHZitRZmE/f/NvW008fnb0l7V2bSq9b9VZpXXrz30cPc7+8p/77nHTUav2qd3brCyf9X173S6B39Za0X//tf04enf3SfvOo1X/3RX4q9zXIImmHkxWpzNosXQUiOVkOt1mUpN/Z/X79f8927fRDm9Ber/6+9JCmXx8dn1RAv/ot+r6V21VK/frCWbrTfrOQJuTsvfRhb/fXvUrnXTt9erJX+iJd+Spkkd8cJMt94s+cUVC0Rtwbfp9jgZGqtndb9d3+w/aHg/4vYLx//z1XL/VBsvz+hw9gn0oHH3Zf229/3k/bvf39wuuDX32VnNX1VuXN7v7v7be+3vt5v/NFfs+EZOFiN0bWF/G3qFmddddxnPXSbG6H6Zj/tOy4zsWjPcLKwyyrlmwQqVLlaQ8iZYwNITqAAJDAUV2x0+mHexLEskC1bYPVw3oeputAvG2zpUy2fs+//QkQ+rbIgGtKv5TJQqe+13uas2fjLH5Wbx+9fl33CZ2SbFxJ1PrwnsyGjBBClD7sn5GZXzp8FVC9sBUg/OVeruCaIjaLqF9DFgZGOGlNFfVSshUFIk4Jg9CrzYLolF2r/xE/o7+a/nyhBmD6QFkQTq8ZEYwpcSb/yjJ3BUvlGJDPLDBXVJ4oSX8EWWwmTpGCqaYv3QD1WulVg9+QzLxd5XnutXf8QT+w/Ci9FBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEPhS+D+HnxEIelDNDwAAAABJRU5ErkJggg==)
 
-## Available Scripts
+    
+# e-Shop
 
-In the project directory, you can run:
+e-Shop is a shopping website made using React JS and Redux. 
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Client:** React, Redux, Semantic UI
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Server:** FakeAPI
 
-### `npm test`
+  
+## Run Locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install dependencies
 
-### `npm run build`
+```bash
+  npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Start the server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+  npm run start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  
+## Deployment
 
-### `npm run eject`
+To deploy this project run
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+  npm run deploy
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  
+## Support
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+For support, email sandeepbishtit@gmail.com.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
